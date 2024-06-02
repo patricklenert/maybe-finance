@@ -4,8 +4,6 @@ services:
     image: ghcr.io/maybe-finance/maybe:latest
     volumes:
       - ./storage:/rails/storage
-    ports:
-      - 3000:3000
     restart: unless-stopped
     env_file:
       - .env
